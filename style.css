@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 /* paletas de colores principal del sitio */
 :root {
     --blanco: #fff;
@@ -26,7 +28,7 @@ body {
 /* HEADER */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     left: 0;
@@ -35,11 +37,13 @@ header {
     color: var(--blanco);
     align-items: center;    
     z-index: 1000;
-    padding: 1rem;
 }
 
 header h1 {
-    font-size: 1.8rem;
+    font-family: "Courgette", cursive;
+  font-weight: 600;
+    font-size: 2.1rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 nav ul {
