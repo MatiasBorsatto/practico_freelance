@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 body {
@@ -78,8 +79,11 @@ section {
     border-radius: 0.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     scroll-margin-top: 100px;
-    box-shadow: 0 0.5rem 0.5rem rgb(151, 151, 151);
+}
 
+section:hover{
+    box-shadow: 0 0.5rem 0.5rem rgb(151, 151, 151);
+    transition: 0.5s;
 }
 
 .hero {
@@ -128,24 +132,31 @@ h2 {
 footer {
     background: var(--secundario);
     color: var(--blanco);
-    padding: 2rem;
     text-align: center;
     margin-top: 4rem;
     font-size: 0.9rem;
     list-style: none;
 }
 
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
 .footer_section{
   list-style: none;
 }
 
-.parrafo-portafolio{
-    text-align: center;
-    margin: 2rem 0 2rem 0;
+.footer-bottom{
+    padding: 1.5rem 0 1.5rem 0;
 }
 
-.portafolio h2{
-    font-size: xx-large;
+.parrafo-portafolio{
+    text-align: center;
+    margin: 1rem 0 1rem 0;
 }
 
 #inicio{
@@ -156,4 +167,27 @@ footer {
     box-shadow: 0 0.5rem 0.5rem rgb(151, 151, 151);
     color: white;
 
+}
+
+.sobre-mi-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre-mi-text ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    list-style: none;
+}
+
+.sobre-mi-text h3{
+    margin: 1rem 0 1rem 0;
+}
+
+.proyecto img{
+    max-height: 28rem;
+    margin-bottom: 1.2rem;
 }
