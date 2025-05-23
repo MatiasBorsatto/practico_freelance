@@ -166,7 +166,9 @@ footer {
     background-position-y: -20rem;
     box-shadow: 0 0.5rem 0.5rem rgb(151, 151, 151);
     color: white;
-
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 9/2;
 }
 
 .sobre-mi-text{
@@ -190,4 +192,106 @@ footer {
 .proyecto img{
     max-height: 28rem;
     margin-bottom: 1.2rem;
+}
+
+.testimonios p{
+    font-family:italic;
+}
+
+.testimonio{
+    margin-top: 1rem;
+}
+
+.contacto-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.social-links a{
+    color: var(--oscuro);
+}
+
+i{
+    margin-right: 0.5rem;
+}
+
+.contacto-container a:hover{
+    color: #0097a7;
+    transition:0.5s;
+}
+
+.footer-section a:hover{
+    color:#ffc107;
+    transition:0.5s;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    width: 20rem;
+    gap: 2rem;
+}
+
+input{
+    border-radius: .2rem;
+    height: 1.5rem;
+    padding: 1rem .8rem 1rem .8rem;
+}
+
+.form-group button{
+    margin: 1rem 0 1rem 0;
+    border-radius: .2rem;
+    height: 2rem;
+    border: 1px solid grey;
+}
+
+.form-group button:hover{
+    cursor: pointer;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    box-shadow: 0 .2rem .5rem grey;
+}
+
+textarea{
+    resize: none;
+}
+
+@media (max-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav ul {
+        gap: .6rem;
+    }
+
+    section{
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    body > *:not(header) {
+    margin-top: 0px;
+
+    .contenedor-redes{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    form{
+        margin: 1rem 0 1rem 0;
+    }
+}
 }
